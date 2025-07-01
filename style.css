@@ -130,6 +130,27 @@ a:hover {
   border-radius: 5px;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
 @media (max-width: 600px) {
   /*see a drastic affect when screen size changes  */
   /*
@@ -151,7 +172,16 @@ a:hover {
     padding: 10px;
   }
   p {
-    margin-bottom: 12px;
+    margin-bottom: 12px; 
     margin-top: 12px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .nav-links li a {
+    font-size: 16px;
   }
 }
