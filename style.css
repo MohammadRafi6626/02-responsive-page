@@ -129,3 +129,29 @@ a:hover {
   margin-bottom: 20px;
   border-radius: 5px;
 }
+
+@media (max-width: 600px) {
+  /*see a drastic affect when screen size changes  */
+  /*
+  body {background-color : blue;}
+  */  
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  #featured-article h2 {
+    font-size: 32px;
+  }
+  section, #featured-article {
+    padding: 10px;
+  }
+  p {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+}
